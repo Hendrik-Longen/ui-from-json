@@ -1,0 +1,22 @@
+{
+    "controls": [
+      {
+        "name": "firstName",
+        "label": "First name:",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "name": "lastName",
+        "label": "Last name:",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "name": "comments",
+        "label": "Comments",
+        "value": "",
+        "type": "text"
+      }
+    ]
+  }

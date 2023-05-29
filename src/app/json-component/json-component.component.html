@@ -1,0 +1,13 @@
+<div class="card">
+    <form [formGroup]="myForm" class="flex align-items-stretch flex-wrap card-container blue-container" style="max-width: max">
+        <div *ngFor="let control of jsonFormData?.controls" class="justify-content-center font-bold border-round m-2">
+            <label [for]="control.name" class="font-bold block mb-2">{{control.label}} </label>
+            <input [id]="control.name" [formControlName]="control.name" [type]="control.type" [value]="control.value" pInputText >
+        </div>
+    </form>
+    <div class="flex align-items-stretch flex-wrap card-container blue-container">
+        <p-button label="Cancel" class="justify-content-center font-bold border-round m-2"></p-button>  
+        <p-button label="Submit" class="justify-content-center font-bold border-round m-2" (onClick)=onSubmit()></p-button> 
+    </div>
+</div>
+
