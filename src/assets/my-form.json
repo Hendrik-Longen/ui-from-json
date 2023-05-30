@@ -2,21 +2,61 @@
     "controls": [
       {
         "name": "firstName",
+        "width": "10em",
         "label": "First name:",
         "value": "",
-        "type": "text"
+        "type": "text",
+        "validators": {
+          "required": true
+        }
       },
       {
         "name": "lastName",
         "label": "Last name:",
         "value": "",
-        "type": "text"
+        "width": "10em",
+        "type": "decimal",
+        "validators": {
+            "required": true
+        }
       },
       {
-        "name": "comments",
-        "label": "Comments",
+        "name": "birthday",
+        "label": "Birthday:",
         "value": "",
-        "type": "text"
+        "type": "calendar",
+        "validators": {
+            "required": true
+        }
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "value": "",
+        "width": "10em",
+        "type": "text",
+        "validators": {
+            "required": true,
+            "email": true
+        }
+        
+      },
+      {
+        "name": "comment",
+        "label": "Comment",
+        "value": "",
+        "type": "textarea",
+        "validators": {}
+        
+      },
+      {
+        "name": "country",
+        "label": "Country",
+        "data": "drop-down.data.json",
+        "value":"name",
+        "type": "dropdown",
+        "validators": {}
       }
+
     ]
   }

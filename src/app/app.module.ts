@@ -13,6 +13,12 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
+import { KeyFilterModule } from 'primeng/keyfilter';
+import { MessageModule} from 'primeng/message';
+import { MessagesModule} from 'primeng/messages';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,13 @@ import { ButtonModule } from 'primeng/button';
     CheckboxModule,
     RadioButtonModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    CalendarModule,
+    KeyFilterModule,
+    MessageModule,
+    MessagesModule,
+    InputTextareaModule,
+    DropdownModule,
 
   ],
   providers: [],
